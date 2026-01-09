@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Script 1.0 — Легка робота, реальні гроші</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Poppins', sans-serif; background:#f0f2f5; color:#333; line-height:1.6; }
+
+    /* --- Header --- */
+    header { background: linear-gradient(135deg, #ff7f50, #ff4500); color:#fff; text-align:center; padding:100px 20px; }
+    header h1 { font-size:3em; font-weight:700; margin-bottom:15px; text-shadow:1px 1px 5px rgba(0,0,0,0.3);}
+    header p { font-size:1.2em; font-weight:500; }
+
+    /* --- Sections --- */
+    section { max-width:900px; margin:50px auto; padding:40px 30px; background:#fff; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.1); opacity:0; transform:translateY(50px); transition: all 0.8s ease; }
+    section.visible { opacity:1; transform:translateY(0); }
+    h2 { font-size:2em; color:#ff4500; margin-bottom:20px; text-align:center; }
+    p { font-size:1.1em; margin-bottom:15px; }
+    ul { list-style:none; padding:0; margin-bottom:20px; }
+    li { margin-bottom:12px; padding-left:30px; position:relative; font-weight:500; }
+    li:before { content:"✔"; position:absolute; left:0; color:#ff4500; font-weight:bold; font-size:1.1em; }
+
+    /* --- CTA --- */
+    .cta { text-align:center; margin:50px 0; }
+    .cta a { text-decoration:none; }
+    .cta button { background:#ff4500; color:#fff; border:none; padding:20px 60px; font-size:1.3em; font-weight:600; cursor:pointer; border-radius:50px; transition:0.3s; box-shadow:0 5px 20px rgba(0,0,0,0.2); }
+    .cta button:hover { background:#ff6347; transform:translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.3); }
+
+    /* --- Testimonials / Reviews --- */
+    .reviews { display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px; margin-top:30px; }
+    .review { background:#ffefd5; border-radius:15px; padding:20px; flex:1 1 250px; box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+    .review p { font-style:italic; margin-bottom:10px; }
+    .review span { font-weight:600; color:#ff4500; }
+
+    /* --- Counter --- */
+    .counter { text-align:center; margin-top:40px; font-size:1.2em; }
+    .counter span { font-weight:700; color:#ff4500; font-size:1.5em; }
+
+    /* --- FAQ --- */
+    .faq p { margin-bottom:15px; font-size:1.05em; }
+    .faq strong { color:#ff4500; }
+
+    /* --- Footer --- */
+    footer { text-align:center; padding:30px 20px; background:#1f2937; color:#fff; font-size:0.9em; border-top:5px solid #ff4500; }
+
+    @media(max-width:768px){
+        header h1 { font-size:2.2em; }
+        section { padding:30px 20px; }
+        .cta button { padding:15px 40px; font-size:1.1em; }
+        .reviews { flex-direction:column; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Script 1.0</h1>
+    <p>Готовий шлях до заробітку — легка робота, реальні гроші</p>
+</header>
+
+<section id="about">
+    <h2>Про що це</h2>
+    <p>Я даю тобі <strong>готову можливість заробляти</strong>, де всі тексти і інструкції вже підготовлені.  
+    Робота всередині <strong>дуже проста</strong>, але результат залежить від того, наскільки точно ти слідуєш алгоритму.</p>
+    <ul>
+        <li>Ти платиш тільки за доступ до можливості.</li>
+        <li>Завдання легкі і чіткі.</li>
+        <li>Не для тих, хто шукає халяву.</li>
+    </ul>
+</section>
+
+<section id="how">
+    <h2>Як це працює</h2>
+    <ul>
+        <li>Отримуєш готові тексти.</li>
+        <li>Виконуєш просту інструкцію.</li>
+        <li>Отримуєш оплату на картку.</li>
+    </ul>
+</section>
+
+<section id="advantages">
+    <h2>Переваги</h2>
+    <ul>
+        <li>Не потрібно вкладень чи складних знань.</li>
+        <li>Алгоритм вже протестований і працює.</li>
+        <li>Підходить тим, хто реально готовий працювати.</li>
+    </ul>
+</section>
+
+<section class="cta">
+    <a href="https://send.monobank.ua/jar/4R97AcgSWm" target="_blank">
+        <button>Отримати доступ зараз</button>
+    </a>
+</section>
+
+<section class="reviews">
+    <h2 style="text-align:center;">Відгуки користувачів</h2>
+    <div class="reviews">
+        <div class="review">
+            <p>“Виконую завдання 2 тижні — вже отримав перші виплати на картку! Дякую Script 1.0.”</p>
+            <span>– Олег, 27 років</span>
+        </div>
+        <div class="review">
+            <p>“Все дуже просто і зрозуміло. Виконую алгоритм щодня і результат реально є.”</p>
+            <span>– Анна, 23 роки</span>
+        </div>
+        <div class="review">
+            <p>“Найкращий спосіб заробляти без вкладень. Рекомендую всім, хто хоче працювати.”</p>
+            <span>– Сергій, 30 років</span>
+        </div>
+    </div>
+</section>
+
+<section class="counter">
+    <p>Вже <span id="usersCount">124</span> людей заробляють з Script 1.0!</p>
+</section>
+
+<section class="faq" id="faq">
+    <h2>FAQ</h2>
+    <p><strong>Потрібні додаткові гроші для роботи?</strong> — Ні, всі завдання всередині безкоштовні.</p>
+    <p><strong>Складно виконувати завдання?</strong> — Ні, все дуже просто і чітко.</p>
+    <p><strong>Як швидко можна заробити?</strong> — Все залежить від того, як точно слідуєш інструкції.</p>
+    <p><strong>Що робити після оплати?</strong> — Після оплати ти одразу отримуєш доступ до готового алгоритму і текстів.</p>
+</section>
+
+<footer>
+    Script 1.0 © 2026 — Легка робота, реальні гроші, мінімум вкладень.
+</footer>
+
+<script>
+    // Анімація появлення секцій при скролі
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+        });
+    }, { threshold:0.2 });
+    sections.forEach(section => observer.observe(section));
+
+    // Лічильник користувачів (для прикладу динамічно)
+    let count = 124;
+    const usersCount = document.getElementById('usersCount');
+    setInterval(() => {
+        count += Math.floor(Math.random() * 2); // додаємо 0-1 користувачів
+        usersCount.textContent = count;
+    }, 3000);
+</script>
+
+</body>
+</html>
